@@ -14,8 +14,7 @@ export default createGlobalStyle`
         box-sizing:border-box;
     }
     body{
-        font-family: 'Bitter', serif;
-        line-height: 1.5;
+        font-family: 'Roboto Condensed', sans-serif;
     }
     html,body,#root{
         height:100%; 
@@ -34,5 +33,7 @@ export default createGlobalStyle`
     button:hover{
         filter: brightness(75%);
     }
-    
+    a{
+        text-decoration:none;
+        }
 `;
