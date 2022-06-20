@@ -1,23 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import { FiMenu } from "react-icons/fi";
+import React, { useState } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
 import { Container, Logo, Menu, MenuLabel, Nav } from "./style";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
+
+  const toggleMenu = () => {
+    setShow(!show);
+  };
   return (
     <Container>
-      <Menu>
-        <MenuLabel>
-          <Link href="#">
-            <FiMenu />
-          </Link>
-        </MenuLabel>
+      <Menu onClick={toggleMenu}>
+        <MenuLabel>{show ? <FiX /> : <FiMenu />}</MenuLabel>
       </Menu>
       <Logo>
-        <Image src="/logo/dabliu.png" width={50} height={50} />
+        <Link href="/">
+          <Image src="/logo/dabliu.png" width={50} height={50} />
+        </Link>
       </Logo>
-      <Nav>
+      <Nav show={show}>
         <Link href="/">
           <a>Home</a>
         </Link>
