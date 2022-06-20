@@ -30,13 +30,15 @@ export const Menu = styled.div`
 `;
 
 export const MenuLabel = styled.label`
-  color: ${textColor};
+  color: ${linkColor};
   font-size: 50px;
 `;
 
 export const Logo = styled.div`
+  display: flex;
+  padding: 5px;
   z-index: 999;
-  padding-top: 0.2rem;
+  align-items: center;
   cursor: pointer;
 `;
 
@@ -49,10 +51,8 @@ export const Nav = styled.nav<StyledNavProps>`
   a {
     display: block;
     color: ${linkColor};
-    font-weight: bold;
     margin: 0 1rem;
     padding: 1rem;
-    font-size: 1rem;
     position: relative;
   }
   a::after {

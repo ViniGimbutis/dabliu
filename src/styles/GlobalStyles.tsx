@@ -1,10 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import {
-  linkColor,
-  primaryColor,
-  primaryDarkColor,
-  textColor,
-} from "../config/colors";
+import { linkColor, primaryColor, textColor } from "../config/colors";
 
 export default createGlobalStyle`
     *{
@@ -35,5 +30,8 @@ export default createGlobalStyle`
     }
     a{
         text-decoration:none;
-        }
+        color: ${linkColor}; 
+        font-size: 1rem;
+        font-weight: bold;
+    }
 `;
