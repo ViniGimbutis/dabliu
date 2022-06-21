@@ -29,8 +29,9 @@ class MyDocument extends Document {
             href="https://fonts.gstatic.com"
             crossOrigin="true"
           />
+
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100&family=Roboto+Condensed:wght@300&family=Zilla+Slab:ital,wght@1,300&display=swap"
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" />

@@ -21,21 +21,15 @@ const Header = () => {
         </Link>
       </Logo>
       <Nav show={show}>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-        <Link href="/">
-          <a>Quem Somos</a>
-        </Link>
-        <Link href="/">
-          <a>Impressão 3D</a>
-        </Link>
-        <Link href="/">
-          <a>Orçamento</a>
-        </Link>
-        <Link href="/">
-          <a>Contato</a>
-        </Link>
+        <a href="#Home">Home</a>
+
+        <a href="#QuemSomos"> Quem Somos</a>
+
+        <a href="#Impressao3D">Impressão 3D</a>
+
+        <a href="#Orcamento">Orçamento</a>
+
+        <a href="#Contato">Contato</a>
       </Nav>
     </Container>
   );

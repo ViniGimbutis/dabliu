@@ -10,11 +10,11 @@ export default createGlobalStyle`
     }
     body{
         font-family: 'Roboto Condensed', sans-serif;
+        background:linear-gradient(to bottom, #C1CD40, #636C00, #C1CD40);
     }
     html,body,#root{
         height:100%; 
     }
-
     button{
         cursor:pointer;
         background: ${primaryColor};
@@ -33,5 +33,15 @@ export default createGlobalStyle`
         color: ${linkColor}; 
         font-size: 1rem;
         font-weight: bold;
+    }
+    h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        color: ${linkColor};
+        font-size: 4.5rem;
+    }
+    h2 {
+        font-family: 'Zilla Slab', serif;
+        color: ${linkColor};
+        font-size:2rem;
     }
 `;
