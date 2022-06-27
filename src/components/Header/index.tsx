@@ -17,7 +17,9 @@ const Header = () => {
         <MenuLabel>{show ? <FiX /> : <FiMenu />}</MenuLabel>
       </Menu>
       <Logo>
-        <Image src="/logo/dabliu.png" width={50} height={50} />
+        <a>
+          <Image src="/logo/dabliu.png" width={50} height={50} />
+        </a>
       </Logo>
       <Nav show={show}>
         <Link
