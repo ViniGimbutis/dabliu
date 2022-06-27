@@ -5,18 +5,7 @@ import { Container } from "./style";
 const Footer = () => {
   return (
     <Container>
-      <Link href="/">
-        <a>Dabliu</a>
-      </Link>
-      <Link href="/">
-        <a>Quem somos</a>
-      </Link>
-      <Link href="/">
-        <a>Orçamento</a>
-      </Link>
-      <Link href="/">
-        <a>Contato</a>
-      </Link>
+      <h3>Copyright © 2022 | Dabliu</h3>
     </Container>
   );
 };

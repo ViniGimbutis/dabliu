@@ -1,4 +1,5 @@
 import Head from "next/head";
+import UpButton from "../src/components/UpButton";
 import GlobalStyles from "../src/styles/GlobalStyles";
 
 function MyApp({ Component, pageProps }) {
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
         <title>Dabliu</title>
       </Head>
       <GlobalStyles />
+      <UpButton />
       <Component {...pageProps} />
     </>
   );

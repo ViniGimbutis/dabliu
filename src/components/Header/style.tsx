@@ -39,7 +39,6 @@ export const Logo = styled.div`
   padding: 5px;
   z-index: 999;
   align-items: center;
-  cursor: pointer;
 `;
 
 interface StyledNavProps {
@@ -48,6 +47,7 @@ interface StyledNavProps {
 export const Nav = styled.nav<StyledNavProps>`
   display: flex;
   align-items: center;
+  transition: all 5s;
   a {
     display: block;
     color: ${linkColor};

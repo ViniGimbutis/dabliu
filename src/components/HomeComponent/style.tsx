@@ -15,6 +15,9 @@ export const Container = styled.div`
     padding-bottom: 2.5rem;
   }
   div {
-    padding-bottom: 2.5rem;
+    background: #f8f8f8;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
 `;

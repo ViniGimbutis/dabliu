@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
+
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Container, Logo, Menu, MenuLabel, Nav } from "./style";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -11,25 +12,58 @@ const Header = () => {
     setShow(!show);
   };
   return (
-    <Container>
+    <Container id="top">
       <Menu onClick={toggleMenu}>
         <MenuLabel>{show ? <FiX /> : <FiMenu />}</MenuLabel>
       </Menu>
       <Logo>
-        <Link href="/">
-          <Image src="/logo/dabliu.png" width={50} height={50} />
-        </Link>
+        <Image src="/logo/dabliu.png" width={50} height={50} />
       </Logo>
       <Nav show={show}>
-        <a href="#Home">Home</a>
-
-        <a href="#QuemSomos"> Quem Somos</a>
-
-        <a href="#Impressao3D">Impressão 3D</a>
-
-        <a href="#Orcamento">Orçamento</a>
-
-        <a href="#Contato">Contato</a>
+        <Link
+          activeClass="active"
+          to="Home"
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={500}
+          onClick={toggleMenu}
+        >
+          Home
+        </Link>
+        <Link
+          activeClass="active"
+          to="QuemSomos"
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={500}
+          onClick={toggleMenu}
+        >
+          Quem somos
+        </Link>
+        <Link
+          activeClass="active"
+          to="Impressao3D"
+          spy={true}
+          smooth={true}
+          offset={-20}
+          duration={500}
+          onClick={toggleMenu}
+        >
+          Impressão 3D
+        </Link>
+        <Link
+          activeClass="active"
+          to="Orcamento"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
+          onClick={toggleMenu}
+        >
+          Orçamento
+        </Link>
       </Nav>
     </Container>
   );

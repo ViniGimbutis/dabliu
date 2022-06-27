@@ -19,11 +19,34 @@ export const Textos = styled.div`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   p {
     font-size: 1.2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   h1 {
     color: ${textDarkColor};
     text-align: center;
     padding-bottom: 2rem;
   }
+  h2 {
+    color: ${textDarkColor};
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    color: ${textDarkColor};
+    margin-bottom: 0.5rem;
+  }
+`;
+
+export const Center = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+`;
+export const Passos = styled.div`
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2rem;
+`;
+
+export const Space = styled.div`
+  min-height: 1rem;
 `;
