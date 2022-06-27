@@ -160,6 +160,7 @@ const QuemSomos = () => {
         <p>SIM! Tudo depende de sua criatividade</p>
         <Space />
         <Space />
+        <Space />
         <h2>Como Trabalhamos?</h2>
         <Passos>
           <div>

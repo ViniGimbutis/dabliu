@@ -45,6 +45,10 @@ export const Passos = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 2rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const Space = styled.div`
