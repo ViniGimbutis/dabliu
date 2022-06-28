@@ -20,7 +20,11 @@ const ItemList = (props: AllProps) => {
   return (
     <Container>
       <Title>
-        <div>
+        <div
+          onClick={() => {
+            setShow(!show);
+          }}
+        >
           <h4>{props.title}</h4>
           <label onClick={changeShow}>
             {show ? <VscEyeClosed /> : <FiPlusCircle />}

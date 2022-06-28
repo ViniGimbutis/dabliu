@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { linkColor, primaryColor, textColor } from "../../config/colors";
+import { linkColor, primaryColor } from "../../config/colors";
 
 export const Container = styled.header`
   display: flex;
@@ -10,7 +10,6 @@ export const Container = styled.header`
   @media (max-width: 768px) {
     padding-left: 1.3rem;
     padding-right: 1.3rem;
-
     justify-content: space-between;
   }
 `;
@@ -31,12 +30,11 @@ export const Menu = styled.div`
 
 export const MenuLabel = styled.label`
   color: ${linkColor};
-  font-size: 50px;
 `;
 
 export const Logo = styled.div`
   display: flex;
-  padding: 5px;
+  padding: 0.5rem;
   z-index: 999;
   align-items: center;
 `;
@@ -81,7 +79,7 @@ export const Nav = styled.nav<StyledNavProps>`
     width: 100%;
     height: 100%;
     padding-top: 6rem;
-    z-index: 2;
+
     a {
       width: 100%;
       margin: 2rem 0;

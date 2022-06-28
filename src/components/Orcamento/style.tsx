@@ -10,8 +10,12 @@ export const Container = styled.section`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   h1 {
     padding-bottom: 2rem;
+
     color: ${textDarkColor};
     text-align: center;
+  }
+  @media (max-width: 768px) {
+    width: 87%;
   }
 `;
 

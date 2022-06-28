@@ -20,7 +20,7 @@ const QuemSomos = () => {
           Conte-nos o que deseja realizar:
           <textarea
             rows={7}
-            placeholder="Conte-nos o que deseja realizar"
+            placeholder="Escreva sua ideia."
             value={mensagem}
             onChange={(e) => {
               setMensagem(e.target.value);

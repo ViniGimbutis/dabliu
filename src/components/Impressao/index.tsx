@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import ItemList from "../ItemList";
-import { Container, Textos, Center, Passos, Space } from "./style";
+import { Container, Textos, Center, Passos, Space, CenterText } from "./style";
 
 const QuemSomos = () => {
   return (
@@ -17,54 +16,59 @@ const QuemSomos = () => {
             height={300}
           />
         </Center>
-        <p>
-          A tecnologia de impressão 3D também pode produzir peças com formas
-          muito complexas. Por exemplo, nas indústrias aeroespacial e
-          automotiva, a tecnologia de impressão 3D é usada para produzir
-          turbinas a gás e peças de motores.
-        </p>
-        <p>
-          No campo da medicina, a tecnologia de impressão 3D pode ser usada para
-          fazer próteses e implantes. Além disso, pesquisas estão em andamento
-          sobre como usar a tecnologia de impressão 3D para criar órgãos
-          artificiais. A vantagem de usar a tecnologia de impressão 3D na área
-          médica é que ela pode personalizar órgãos e partes do corpo que
-          combinam perfeitamente com o corpo do paciente, o que reduz muito o
-          risco de rejeição de órgãos”.
-        </p>
+        <CenterText>
+          <p>
+            A tecnologia de impressão 3D também pode produzir peças com formas
+            muito complexas. Por exemplo, nas indústrias aeroespacial e
+            automotiva, a tecnologia de impressão 3D é usada para produzir
+            turbinas a gás e peças de motores.
+          </p>
+          <p>
+            No campo da medicina, a tecnologia de impressão 3D pode ser usada
+            para fazer próteses e implantes. Além disso, pesquisas estão em
+            andamento sobre como usar a tecnologia de impressão 3D para criar
+            órgãos artificiais. A vantagem de usar a tecnologia de impressão 3D
+            na área médica é que ela pode personalizar órgãos e partes do corpo
+            que combinam perfeitamente com o corpo do paciente, o que reduz
+            muito o risco de rejeição de órgãos”.
+          </p>
+        </CenterText>
         <Space />
         <h2>Benefícios</h2>
-        <h3>Velocidade</h3>
-        <p>
-          Uma das principais vantagens da impressão 3D é que em comparação com
-          os métodos de fabricação tradicionais, a velocidade de produção de
-          peças é mais eficiente. O modelo com aparência de design complexo pode
-          ser exportado a partir de software e produzido pela impressora 3D em
-          algumas horas. A vantagem é que a ideia de projeto pode ser verificada
-          e alterada rapidamente.
-        </p>
-        <p>
-          No passado, pode levar dias ou mesmo semanas para fazer um protótipo
-          através do processamento tradicional, enquanto a impressão 3D daria o
-          modelo para o designer em algumas horas.
-        </p>
-        <h3>Sustentabilidade e desperdício</h3>
-        <p>
-          Métodos de fabrica tradicionais (tais como a moagem ou CNC) retiram
-          uma grande quantidade de material excedentário do material inicial,
-          resultando numa grande quantidade de resíduos. A impressão 3D
-          normalmente usa apenas a quantidade de materiais necessários para
-          fazer peças. Matérias-primas utilizadas na maioria dos processos podem
-          ser recicladas e reutilizadas em vários projetos. Então há pouco
-          desperdício no processo de impressão 3D
-        </p>
-        <h3>Personalização</h3>
-        <p>
-          A impressão 3D pode não só proporcionar mais liberdade de design, mas
-          também personalizar completamente o projeto. Como a tecnologia de
-          impressão 3D atual só pode produzir um pequeno número de peças de cada
-          vez, é muito adequado para produção personalizada em pequenos lotes.
-        </p>
+        <CenterText>
+          <h3>Velocidade</h3>
+          <p>
+            Uma das principais vantagens da impressão 3D é que em comparação com
+            os métodos de fabricação tradicionais, a velocidade de produção de
+            peças é mais eficiente. O modelo com aparência de design complexo
+            pode ser exportado a partir de software e produzido pela impressora
+            3D em algumas horas. A vantagem é que a ideia de projeto pode ser
+            verificada e alterada rapidamente.
+          </p>
+          <p>
+            No passado, pode levar dias ou mesmo semanas para fazer um protótipo
+            através do processamento tradicional, enquanto a impressão 3D daria
+            o modelo para o designer em algumas horas.
+          </p>
+          <h3>Sustentabilidade e desperdício</h3>
+          <p>
+            Métodos de fabrica tradicionais (tais como a moagem ou CNC) retiram
+            uma grande quantidade de material excedentário do material inicial,
+            resultando numa grande quantidade de resíduos. A impressão 3D
+            normalmente usa apenas a quantidade de materiais necessários para
+            fazer peças. Matérias-primas utilizadas na maioria dos processos
+            podem ser recicladas e reutilizadas em vários projetos. Então há
+            pouco desperdício no processo de impressão 3D
+          </p>
+          <h3>Personalização</h3>
+          <p>
+            A impressão 3D pode não só proporcionar mais liberdade de design,
+            mas também personalizar completamente o projeto. Como a tecnologia
+            de impressão 3D atual só pode produzir um pequeno número de peças de
+            cada vez, é muito adequado para produção personalizada em pequenos
+            lotes.
+          </p>
+        </CenterText>
         <Space />
         <h2>O que posso imprimir</h2>
         <ItemList
@@ -119,7 +123,7 @@ const QuemSomos = () => {
           <h2>
             Que tipo de material você pode imprimir com uma impressora 3D?
           </h2>
-          <p>Trabalhamos com PLA, ABS, PETG</p>
+          <p>Trabalhamos com PLA, ABS, PETG.</p>
           <Space />
           <h2>
             Qual o tamanho dos objetos que você imprime com uma impressora 3D?
@@ -129,7 +133,7 @@ const QuemSomos = () => {
           <h2>
             Você pode realmente imprimir qualquer coisa com uma impressora 3D?
           </h2>
-          <p>SIM! Tudo depende de sua criatividade</p>
+          <p>SIM! Tudo depende de sua criatividade.</p>
         </Center>
         <Space />
         <Space />

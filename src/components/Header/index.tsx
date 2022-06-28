@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <Container id="top">
       <Menu onClick={toggleMenu}>
-        <MenuLabel>{show ? <FiX /> : <FiMenu />}</MenuLabel>
+        <MenuLabel>{show ? <FiX size={50} /> : <FiMenu size={50} />}</MenuLabel>
       </Menu>
       <Logo>
         <a>
@@ -31,7 +31,7 @@ const Header = () => {
           duration={500}
           onClick={toggleMenu}
         >
-          Home
+          <h3>Home</h3>
         </Link>
         <Link
           activeClass="active"
@@ -42,7 +42,7 @@ const Header = () => {
           duration={500}
           onClick={toggleMenu}
         >
-          Quem somos
+          <h3>Quem somos</h3>
         </Link>
         <Link
           activeClass="active"
@@ -53,7 +53,7 @@ const Header = () => {
           duration={500}
           onClick={toggleMenu}
         >
-          Impressão 3D
+          <h3>Impressão 3D</h3>
         </Link>
         <Link
           activeClass="active"
@@ -64,7 +64,7 @@ const Header = () => {
           duration={500}
           onClick={toggleMenu}
         >
-          Orçamento
+          <h3>Orçamento</h3>
         </Link>
       </Nav>
     </Container>

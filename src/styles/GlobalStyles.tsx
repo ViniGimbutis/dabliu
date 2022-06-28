@@ -42,7 +42,7 @@ export default createGlobalStyle`
         color: ${linkColor};
         font-size: 4rem;
         @media(max-width:768px){
-            font-size: 2rem;
+            font-size: 2.1rem;
         }
         
     }
@@ -51,22 +51,31 @@ export default createGlobalStyle`
         color: ${linkColor};
         font-size:2rem;
         @media(max-width:768px){
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
-        
     }
     h3 {
-        
+        font-family: 'Zilla Slab', serif;
         @media(max-width:768px){
             font-size: 1rem;
         }
-        
     }
     h4 {
+        font-family: 'Zilla Slab', serif;
         font-size: 1.2rem;
         @media(max-width:768px){
-            font-size: 0.8rem;
+            font-size: 0.9rem;
         }
-        
+    }
+    p{
+        font-family: 'Zilla Slab', serif;
+        font-size: 1rem;
+        @media(max-width:768px){
+            font-size: 0.9rem;
+        }
+    }
+    label{
+        font-family: 'Zilla Slab', serif;
+        font-size: 1.2rem;
     }
 `;

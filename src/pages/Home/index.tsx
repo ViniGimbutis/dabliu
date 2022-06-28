@@ -5,6 +5,7 @@ import Impressao from "../../components/Impressao";
 import Header from "../../components/Header";
 import HomeComponent from "../../components/HomeComponent";
 import QuemSomos from "../../components/QuemSomos";
+
 const Home = () => {
   return (
     <>
