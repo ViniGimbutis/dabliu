@@ -42,7 +42,7 @@ export default createGlobalStyle`
         color: ${linkColor};
         font-size: 4rem;
         @media(max-width:768px){
-            font-size: 3rem;
+            font-size: 2rem;
         }
         
     }
@@ -51,7 +51,21 @@ export default createGlobalStyle`
         color: ${linkColor};
         font-size:2rem;
         @media(max-width:768px){
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+    }
+    h3 {
+        
+        @media(max-width:768px){
+            font-size: 1rem;
+        }
+        
+    }
+    h4 {
+        font-size: 1.2rem;
+        @media(max-width:768px){
+            font-size: 0.8rem;
         }
         
     }

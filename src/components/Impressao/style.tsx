@@ -18,7 +18,7 @@ export const Textos = styled.div`
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin-bottom: 1.5rem;
   }
   h1 {
@@ -28,6 +28,7 @@ export const Textos = styled.div`
   }
   h2 {
     color: ${textDarkColor};
+    text-align: center;
     margin-bottom: 1.5rem;
   }
   h3 {
@@ -37,14 +38,14 @@ export const Textos = styled.div`
 `;
 
 export const Center = styled.div`
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 3rem;
 `;
 export const Passos = styled.div`
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 2rem;
+  text-align: center;
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;

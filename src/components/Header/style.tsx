@@ -47,7 +47,7 @@ interface StyledNavProps {
 export const Nav = styled.nav<StyledNavProps>`
   display: flex;
   align-items: center;
-
+  cursor: pointer;
   a {
     display: block;
     color: ${linkColor};

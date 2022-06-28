@@ -38,30 +38,15 @@ export const Form = styled.form`
     font-size: 1.3rem;
   }
 
-  input {
-    height: 40px;
-    font-size: 18px;
-    border: 1px solid #ddd;
-    padding: 0 10px;
-    border-radius: 4px;
-    margin-top: 5px;
-    margin: 0 1rem;
-    &:focus {
-      border: 2px solid ${primaryColor};
-    }
-  }
-
   textarea {
     resize: none;
-    font-size: 18px;
-    border: 2px solid #ddd;
-    padding: 0.5rem;
-    border-radius: 4px;
-    margin-top: 5px;
-    font-size: 16px;
-    margin: 0 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+    border: 3px solid gray;
     &:focus {
-      border: 2px solid ${primaryColor};
+      border: 3px solid ${primaryColor};
     }
   }
 `;

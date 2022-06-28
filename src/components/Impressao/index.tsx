@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import ItemList from "../ItemList";
 import { Container, Textos, Center, Passos, Space } from "./style";
 
 const QuemSomos = () => {
@@ -66,102 +67,75 @@ const QuemSomos = () => {
         </p>
         <Space />
         <h2>O que posso imprimir</h2>
-        <h3>Suporte para celular</h3>
-        <p>
-          Um dos problemas de suportes para celular é que ou o celular não tem
-          apoio e cai do suporte ou o celular tem apoio mas da trabalho
-          monta-lo. Esse suporte busca solucionar esse problema de forma
-          engenhosa e muito legal!
-        </p>
-        <Center>
-          <Image
-            src="/impressao/Suporte_para_Celular_modo_Cinema.png"
-            alt="Suporte para Celular modo Cinema"
-            width={450}
-            height={300}
-          />
-        </Center>
-        <h3>Secador de Talheres</h3>
-        <p>
-          Uma das coisas mais legais da impressão 3D é a possibilidade de
+        <ItemList
+          title="Suporte para celular"
+          text="Um dos problemas de suportes para celular é que ou o celular não tem
+        apoio e cai do suporte ou o celular tem apoio mas da trabalho
+        monta-lo. Esse suporte busca solucionar esse problema de forma
+        engenhosa e muito legal!"
+          image="/impressao/Suporte_para_Celular_modo_Cinema.png"
+          al="Suporte para Celular modo Cinema"
+        />
+
+        <ItemList
+          title="Secador de Talheres"
+          text=" Uma das coisas mais legais da impressão 3D é a possibilidade de
           personalizar coisas simples que passam despercebidas. É o caso desse
-          secador de talheres.
-        </p>
-        <p>
-          Além de bonitinho evita aquela poça que ser forma após a lavagem pois
-          a tromba do elefante direciona tudo para dentro da pia.
-        </p>
-        <Center>
-          <Image
-            src="/impressao/Secador_de_Talheres_Jumbo.png"
-            alt="Secador de Talheres Jumbo"
-            width={450}
-            height={300}
-          />
-        </Center>
-        <h3>Clips para Fechamento de Embalagem</h3>
-        <p>
-          Todos passam por esse problema. Você precisa fechar aquela embalagem
-          mas tudo que tem em mãos são pregadores de roupa.
-        </p>
-        <p>
-          Esses clips são muito mais eficientes. Imprima alguns e você nunca
-          mais passará por esse problema.
-        </p>
-        <Center>
-          <Image
-            src="/impressao/Clips_para_Fechamento_de_Embalagem.png"
-            alt="Clips para Fechamento de Embalagem"
-            width={450}
-            height={300}
-          />
-        </Center>
-        <h3>Suporte para Celular Amplificador</h3>
-        <p>
-          Você pode comprar um dock de centenas de reais para o seu smartphone,
+          secador de talheres. Além de bonitinho evita aquela poça que ser forma após a lavagem pois
+          a tromba do elefante direciona tudo para dentro da pia."
+          image="/impressao/Secador_de_Talheres_Jumbo.png"
+          al="Secador de Talheres Jumbo"
+        />
+
+        <ItemList
+          title="Clips para Fechamento de Embalagem"
+          text="Todos passam por esse problema. Você precisa fechar aquela embalagem
+          mas tudo que tem em mãos são pregadores de roupa. Esses clips são muito mais eficientes. Imprima alguns e você nunca
+          mais passará por esse problema."
+          image="/impressao/Clips_para_Fechamento_de_Embalagem.png"
+          al="Clips para Fechamento de Embalagem"
+        />
+
+        <ItemList
+          title="Suporte para Celular Amplificador"
+          text=" Você pode comprar um dock de centenas de reais para o seu smartphone,
           ou simplesmente imprimir um. O mais legal é que ele também serve como
-          decoração muito bonitinha
-        </p>
-        <Center>
-          <Image
-            src="/impressao/Suporte_para_Celular_Amplificador.png"
-            alt="Suporte para Celular Amplificador"
-            width={450}
-            height={300}
-          />
-        </Center>
-        <h3>Caneca Flutuante</h3>
-        <p>
-          Uma caneca para impressionar suas visitas. Decoração indispensável
+          decoração muito bonitinha"
+          image="/impressao/Suporte_para_Celular_Amplificador.png"
+          al="Suporte para Celular Amplificador"
+        />
+        <ItemList
+          title="Caneca Flutuante"
+          text="Uma caneca para impressionar suas visitas. Decoração indispensável
           para os amantes de café. Se não for o seu caso, imprimia para seu
-          amigo amante de café, sua amizade estará garantida pelo resto da vida!
-        </p>
+          amigo amante de café, sua amizade estará garantida pelo resto da vida!"
+          image="/impressao/Caneca_Flutuante.png"
+          al="Caneca Flutuante"
+        />
+
+        <Space />
+        <Space />
         <Center>
-          <Image
-            src="/impressao/Caneca_Flutuante.png"
-            alt="Caneca Flutuante"
-            width={450}
-            height={300}
-          />
+          <h2>
+            Que tipo de material você pode imprimir com uma impressora 3D?
+          </h2>
+          <p>Trabalhamos com PLA, ABS, PETG</p>
+          <Space />
+          <h2>
+            Qual o tamanho dos objetos que você imprime com uma impressora 3D?
+          </h2>
+          <p>De acordo com as medidas passadas pelo cliente.</p>
+          <Space />
+          <h2>
+            Você pode realmente imprimir qualquer coisa com uma impressora 3D?
+          </h2>
+          <p>SIM! Tudo depende de sua criatividade</p>
         </Center>
-        <Space />
-        <Space />
-        <h2>Que tipo de material você pode imprimir com uma impressora 3D?</h2>
-        <p>Trabalhamos com PLA, ABS, PETG</p>
-        <Space />
-        <h2>
-          Qual o tamanho dos objetos que você imprime com uma impressora 3D?
-        </h2>
-        <p>De acordo com as medidas passadas pelo cliente.</p>
-        <Space />
-        <h2>
-          Você pode realmente imprimir qualquer coisa com uma impressora 3D?
-        </h2>
-        <p>SIM! Tudo depende de sua criatividade</p>
         <Space />
         <Space />
         <Space />
         <h2>Como Trabalhamos?</h2>
+        <Space />
         <Passos>
           <div>
             <h3>CONTE SUA IDEIA</h3>
@@ -205,44 +179,3 @@ const QuemSomos = () => {
 };
 
 export default QuemSomos;
-/*
-
-<Center>
-          <div>
-            <h3>CONTE SUA IDEIA</h3>
-            <p>
-              Envie imagens de referência e a ideia que gostaria de desenvolver.
-            </p>
-            <Image
-              src="/impressao/passo1.png"
-              alt="passo1"
-              width={450}
-              height={300}
-            />
-          </div>
-          <div>
-            <h3>Veja seu projeto em 3D antes de iniciarmos sua produção.</h3>
-            <p>Você pode solicitar alterações se necessário.</p>
-            <Image
-              src="/impressao/passo2.png"
-              alt="passo2"
-              width={450}
-              height={300}
-            />
-          </div>
-          <div>
-            <h3>PRODUÇÃO 3D</h3>
-            <p>
-              O layout aprovado vai para produção, realizada em nossas
-              impressoras 3D
-            </p>
-            <Image
-              src="/impressao/passo3.png"
-              alt="passo3"
-              width={450}
-              height={300}
-            />
-          </div>
-        </Center>
-
-*/
